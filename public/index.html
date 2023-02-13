@@ -18,12 +18,26 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <header class="h-12 flex items-center justify-center">
+    <header
+      class="h-12 flex items-center justify-center lg:justify-start lg:w-full"
+    >
       <img src="assets/img/manifest.svg" alt="маніфест молоді" />
     </header>
 
     <main>
-      <div class="video_wrap overflow-hidden"></div>
+      <div class="video_wrap overflow-hidden relative">
+        <img
+          src="assets/img/we_are.svg"
+          class="absolute left-12 bottom-10 z-10"
+          alt=""
+        />
+
+        <img
+          src="assets/img/top_flag.svg"
+          class="absolute z-20 bottom-40 left-[18.4rem]"
+          alt=""
+        />
+      </div>
 
       <a
         href="#scroll_frame"

@@ -26,6 +26,7 @@ module.exports = {
       unbounded: "Unbounded",
       kharkiv: "kharkiv",
       KyivTypeSans: "KyivTypeSans, sans-serif",
+      granddark: "CyGrotesk-GrandDark",
     },
   },
   plugins: [],
