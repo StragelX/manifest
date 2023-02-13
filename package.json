@@ -1,0 +1,38 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "main": "public/index.html",
+  "author": "StragelX",
+  "scripts": {
+    "tail_watch": "npx tailwindcss -i ./src/tailwind/tailwind_input.css -o ./src/tailwind/tailwind.css --watch --minify",
+    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "copy:html": "copyfiles -u 1 ./src/*.html public",
+    "copy:img": "copyfiles -u 1 ./src/assets/img/**/* public",
+    "copy:tailwind": "copyfiles -u 1 ./src/tailwind/tailwind.css public",
+    "copy:js": "copyfiles -u 1 ./src/js/*.js public",
+    "copy": "npm-run-all --parallel copy:*",
+    "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
+    "watch:img": "onchange \"./src/assets/**/*\" -- npm run copy:img",
+    "watch:js": "onchange \"./src/js/*\" -- npm run copy:js",
+    "watch:tailwind": "onchange \"./src/tailwind/**/*\" -- npm run copy:tailwind",
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch": "npm-run-all --parallel watch:*",
+    "serve": "browser-sync start --server public --files public",
+    "dev": "npm-run-all copy --parallel watch serve tail_watch",
+    "build": "npm-run-all copy:html build:* tail_watch",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
+    "copyfiles": "^2.4.1",
+    "cssnano": "^5.0.17",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.8"
+  }
+}
