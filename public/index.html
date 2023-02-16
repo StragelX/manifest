@@ -14,18 +14,24 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="js/owl.carousel.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
     <header
-      class="h-12 flex items-center justify-center lg:justify-start lg:w-full"
+      class="h-12 flex items-center justify-center lg:justify-between lg:w-full"
     >
       <img src="assets/img/manifest.svg" alt="маніфест молоді" />
+
+      <img
+        src="assets/img/header_face.svg"
+        alt="face"
+        class="hidden md:block"
+      />
     </header>
 
     <main>
-      <div class="video_wrap overflow-hidden relative">
+      <div class="video_wrap overflow-hidden relative rounded-sm">
         <img
           src="assets/img/we_are.svg"
           class="absolute left-12 bottom-10 z-10 hidden md:block"
@@ -50,12 +56,14 @@
         />
       </a>
 
-      <section class="pt-4 relative" id="scroll_frame">
-        <img
-          src="assets/img/manifesting.svg"
-          alt="manifesting"
-          class="absolute top-0 z-0 w-full opacity-50"
-        />
+      <section class="pt-4 lg:pt-[3.9rem] relative" id="scroll_frame">
+        <div class="absolute top-0 z-0 w-full">
+          <img
+            src="assets/img/manifesting.svg"
+            alt="manifesting"
+            class="max-w-[1300px] mx-auto opacity-20"
+          />
+        </div>
 
         <div class="container">
           <div class="row">
@@ -75,7 +83,7 @@
 
             <div class="col_s_12 col_m_8 col_l_7">
               <p
-                class="text-sm text-white text-opacity-90 mb-4 mr-2 ml-9 font-kharkiv lg:-ml-4 lg:mb-8"
+                class="text-sm text-white text-opacity-90 mb-4 mr-2 ml-9 font-kharkiv lg:-ml-4 lg:mb-16"
               >
                 яка може і знає як впливати та змінювати в один клік. Ми ті, хто
                 звикнувши до спокійного життя, готовий вийти і замість смартфона
@@ -121,12 +129,24 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_1.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
                   <p
-                    class="text-sm text-red-100 font-normal text-opacity-90 font-KyivTypeSans"
+                    class="text-sm text-red-100 font-normal text-opacity-90 font-KyivTypeSans py-4 pl-9"
                   >
                     повага до державності, яка виявляється в розумінні єдності
                     громадян нашої країни, діях та розділеній відповідальності
@@ -152,11 +172,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_1.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-red-100 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-red-100 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     для нас - це найвища міра відповідальності. Бути вільним -
                     це не лише про самовираз, але й про усвідомлення своїх дій
                     та їх оцінку. Це не лише про тут і зараз, але й про
@@ -182,11 +216,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_1.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-red-100 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-red-100 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     це можливість бути різними і мати при цьому рівні можливості
                     для самореалізації. Саме рівний підхід та наша
                     самореалізація є передумовами справедливого суспільного
@@ -212,11 +260,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_1.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-red-100 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-red-100 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     це здатність зробити гідний та справедливий внесок у
                     розвиток нашої країни. Це не про ідеї, а про дії та
                     можливість їх втілення. Це можливо реалізувати завдяки
@@ -232,7 +294,9 @@
             <div
               class="col_s_10 col_m_8 m_offset_4 s_offset_2 col_l_8 l_offset_4"
             >
-              <p class="py-8 text-sm text-white text-opacity-90 font-kharkiv">
+              <p
+                class="my-8 lg:my-16 text-sm text-white text-opacity-90 font-kharkiv"
+              >
                 Досить чиїхось обіцянок та наших сподівань. Сьогодні той день,
                 коли молодь заявила про себе, коли молодь буде почутою, день,
                 коли молодь бере все в свої руки.
@@ -272,11 +336,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend_2.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend_2.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_2.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-gray-200 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     Це воля до свободи, участь, гарантії прав людини, це
                     можливість брати на себе відповідальність за країну через
                     прийняття спільних рішень, наше право.
@@ -299,11 +377,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend_2.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend_2.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_2.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-gray-200 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     підтримка підприємницького духу та тямущості молоді в
                     економічних та фінансових питаннях, умови для start-up,
                     можливість отримання першого професійного досвіду дасть нам
@@ -328,11 +420,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend_2.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend_2.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_2.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-gray-200 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     можливість різнобічного розвитку, який включає в себе повагу
                     до особи, її особливостей, турботу про емоційний, фізичний,
                     духовний та професійний розвиток протягом усього життя.
@@ -357,11 +463,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend_2.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend_2.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_2.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-gray-200 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     Ми маємо дбати, аби країна та наша інфраструктура була
                     доступна для всіх людей, аби кожен з наc почувався частиною
                     глобальної спільноти українства, аби разом ми творили
@@ -385,11 +505,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend_2.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend_2.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_2.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-gray-200 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     Для нас важливо, щоб відновлення включало інтереси нашої
                     природи, було ощадливим до ресурсів з повагою до природи.
                   </p>
@@ -402,7 +536,9 @@
             <div
               class="col_s_10 s_offset_2 col_m_10 m_offset_1 col_l_10 l_offset_2"
             >
-              <p class="text-sm text-white text-opacity-90 mt-8 font-kharkiv">
+              <p
+                class="text-sm text-white text-opacity-90 my-8 lg:my-16 font-kharkiv"
+              >
                 Робота за цими напрямками передбачає нашу участь - молодих
                 відповідальних людей, та засновується на довірі та співпраці.<br /><br />
 
@@ -424,9 +560,8 @@
         <div class="container">
           <div class="row">
             <div class="col_s_12 col_m_10 col_l_10">
-              <div class="flex items-center gap-4 py-4 -mb-1 lg:pb-0 lg:-ml-11">
-                <img src="assets/img/star.svg" class="h-[30px] w-[30px] alt=""
-                />
+              <div class="flex items-center gap-4 py-4 -mb-1 lg:py-0 lg:-ml-11">
+                <img src="assets/img/star.svg" class="h-[30px] w-[30px]" />
 
                 <p class="text-lg font-bold text-purple-200 font-unbounded">
                   Ми прагнемо:
@@ -455,11 +590,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend_3.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend_3.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_3.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-purple-200 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-purple-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     У центрі освітнього процесу - особа, яка навчається, а не
                     клас чи вчитель. Освіта має бути орієнтована на молодь,
                     створювати можливості для творення та підтримки спільнот, а
@@ -481,11 +630,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend_3.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend_3.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_3.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-purple-200 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-purple-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     Ми прагнемо, щоб у суспільстві цінувалися сміливість та
                     підприємливість. Щоб стало тим, до чого прагнуть, а не чого
                     бояться. Загальновизнаним критерієм успіху є не лише
@@ -507,11 +670,25 @@
                     </p>
                   </div>
 
-                  <img src="assets/img/arrow_extend_3.svg" alt="arrow" />
+                  <img
+                    src="assets/img/arrow_extend_3.svg"
+                    alt="arrow"
+                    class="block group-[.active]:hidden"
+                  />
+
+                  <img
+                    src="assets/img/close_icon_3.svg"
+                    alt="close"
+                    class="hidden group-[.active]:block"
+                  />
                 </div>
 
-                <div class="py-4 pl-9 hidden group-[.active]:block">
-                  <p class="text-sm text-purple-200 text-opacity-90">
+                <div
+                  class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
+                >
+                  <p
+                    class="text-sm text-purple-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                  >
                     Рішення щодо майбутнього країни не будуть ефективними, якщо
                     вони не враховуватимуть потреби молоді. Прийняття політичних
                     рішень неможливе без нас. Ми ті, хто будуємо, ті, хто
@@ -527,7 +704,7 @@
           <div class="row">
             <div class="col_s_12 col_m_7 col_l_7">
               <p
-                class="text-base text-white text-opacity-90 mt-7 mb-10 font-kharkiv"
+                class="text-base text-white text-opacity-90 my-8 lg:my-16 font-kharkiv"
               >
                 Якщо ти поділяєш наші цінності та бажаєш аби вони стали
                 суспільно прийнятими нормами - будь соціально відповідальним,
@@ -541,7 +718,7 @@
               <a
                 href=""
                 download=""
-                class="flex items-center gap-4 group mb-12 md:mt-24"
+                class="flex items-center gap-4 group mb-12 md:mt-40"
               >
                 <img
                   src="assets/img/finger_hand.svg"
@@ -561,22 +738,25 @@
       </section>
 
       <section
-        class="border-white border-opacity-20 border-t border-b pt-2 pb-14 flex flex-col items-center justify-center"
+        class="border-white border-opacity-20 border-t border-b py-14 lg:py-20 flex flex-col items-center justify-center relative"
       >
+        <div
+          class="absolute top-0 left-0 bottom-0 right-0 z-0 bg-gray-600 bg-opacity-5 blur_10"
+        ></div>
         <p
-          class="text-9xl font-thin tracking-widest text-gray-400 text-center font-KyivTypeSans"
+          class="text-9xl font-thin tracking-widest text-gray-400 text-center font-KyivTypeSans z-10"
         >
           596
         </p>
 
         <p
-          class="text-sm text-center text-gray-400 mb-14 font-normal font-KyivTypeSans"
+          class="text-sm text-center text-gray-400 mb-14 font-normal font-KyivTypeSans z-10 lg:-mt-2"
         >
           розділяють наші цінності маніфесту
         </p>
 
         <button
-          class="w-56 h-10 flex items-center text-sm font-medium tracking-wide text-white justify-center bg-blue-700 shadow border rounded-full border-black border-opacity-20 gap-4 font-unbounded hover:text-yellow-300"
+          class="w-56 h-10 flex items-center text-sm font-medium tracking-wide text-white justify-center bg-blue-700 shadow border rounded-full border-black border-opacity-20 gap-4 font-unbounded hover:text-yellow-300 z-10 hover:bg-blue-800 transition-all"
         >
           ПІДТРИМУЮ
 
@@ -590,7 +770,7 @@
             <div
               class="col_s_10 s_offset_2 col_m_6 m_offset_2 col_l_10 l_offset_2"
             >
-              <div class="flex items-center gap-4 mt-12 mb-7">
+              <div class="flex items-center gap-4 mt-12 mb-7 lg:mt-24 lg:mb-16">
                 <img
                   src="assets/img/sign.svg"
                   class="w-[30px] h-[30px]"
@@ -598,7 +778,7 @@
                 />
 
                 <p
-                  class="text-2xl font-extralight tracking-wide text-yellow-100 text-opacity-80 font-unbounded"
+                  class="text-2xl lg:text-[40px] font-extralight tracking-wide text-yellow-100 text-opacity-80 font-unbounded"
                 >
                   ПІДПИСАНТИ
                 </p>
@@ -608,36 +788,40 @@
         </div>
       </section>
 
-      <section class="mb-24">
+      <section class="mb-24 lg:mb-32">
         <div class="owl-carousel">
           <div class="flex justify-end">
             <div
-              class="bg-gray-800 bg-opacity-40 rounded-sm flex items-center gap-6 px-6 py-4 cursor-grab mt-[230px]"
+              class="bg-gray-800 bg-opacity-40 rounded-sm flex items-center gap-6 pl-40 pr-6 py-4 cursor-grab mt-[230px]"
             >
               <p class="text-base text-white text-opacity-50 font-KyivTypeSans">
                 тягни
               </p>
 
               <div class="flex items-center">
-                <div class="w-5 h-5 bg-gray-500 rounded-full z-30 -mr-3"></div>
-
                 <div
-                  class="w-5 h-5 bg-gray-500 bg-opacity-80 rounded-full z-20 -mr-3"
+                  class="w-5 h-5 bg-gray-500 rounded-full z-30 -mr-3 animate_round_1"
                 ></div>
 
                 <div
-                  class="w-5 h-5 bg-gray-500 bg-opacity-40 rounded-full z-10 -mr-3"
+                  class="w-5 h-5 bg-gray-500 rounded-full z-20 -mr-3 animate_round_2"
                 ></div>
 
                 <div
-                  class="w-5 h-5 bg-gray-500 bg-opacity-20 rounded-full z-0"
+                  class="w-5 h-5 bg-gray-500 rounded-full z-10 -mr-3 animate_round_3"
+                ></div>
+
+                <div
+                  class="w-5 h-5 bg-gray-500 rounded-full z-0 animate_round_4"
                 ></div>
               </div>
             </div>
           </div>
 
           <div class="flex justify-center gap-14">
-            <img src="assets/img/temp_1.jpg" alt="" />
+            <div class="img_wrap rounded-sm max-h-[320px] overflow-hidden">
+              <img src="assets/img/temp_1.jpg" alt="" />
+            </div>
 
             <div class="flex flex-col justify-between">
               <div class="flex flex-col gap-1">
@@ -672,7 +856,9 @@
           </div>
 
           <div class="flex justify-center gap-14">
-            <img src="assets/img/temp_2.jpg" alt="" />
+            <div class="img_wrap rounded-sm max-h-[320px] overflow-hidden">
+              <img src="assets/img/temp_2.jpg" alt="" />
+            </div>
 
             <div class="flex flex-col justify-between">
               <div class="flex flex-col gap-1">
@@ -707,7 +893,9 @@
           </div>
 
           <div class="flex justify-center gap-14">
-            <img src="assets/img/temp_1.jpg" alt="" />
+            <div class="img_wrap rounded-sm max-h-[320px] overflow-hidden">
+              <img src="assets/img/temp_1.jpg" alt="" />
+            </div>
 
             <div class="flex flex-col justify-between">
               <div class="flex flex-col gap-1">
@@ -742,7 +930,9 @@
           </div>
 
           <div class="flex justify-center gap-14">
-            <img src="assets/img/temp_2.jpg" alt="" />
+            <div class="img_wrap rounded-sm max-h-[320px] overflow-hidden">
+              <img src="assets/img/temp_1.jpg" alt="" />
+            </div>
 
             <div class="flex flex-col justify-between">
               <div class="flex flex-col gap-1">
@@ -777,7 +967,9 @@
           </div>
 
           <div class="flex justify-center gap-14">
-            <img src="assets/img/temp_1.jpg" alt="" />
+            <div class="img_wrap rounded-sm max-h-[320px] overflow-hidden">
+              <img src="assets/img/temp_1.jpg" alt="" />
+            </div>
 
             <div class="flex flex-col justify-between">
               <div class="flex flex-col gap-1">
@@ -812,7 +1004,9 @@
           </div>
 
           <div class="flex justify-center gap-14">
-            <img src="assets/img/temp_2.jpg" alt="" />
+            <div class="img_wrap rounded-sm max-h-[320px] overflow-hidden">
+              <img src="assets/img/temp_1.jpg" alt="" />
+            </div>
 
             <div class="flex flex-col justify-between">
               <div class="flex flex-col gap-1">
@@ -844,6 +1038,27 @@
                 Українська спілка молодих географів
               </p>
             </div>
+          </div>
+        </div>
+
+        <div
+          class="owl-nav flex items-baseline gap-5 mt-12 text-white w-full justify-center"
+        >
+          <div class="owl-prev cursor-pointer disabled">
+            <img
+              src="assets/img/carousel_arrow.svg"
+              alt=""
+              class="rotate-180"
+            />
+          </div>
+
+          <p
+            id="info"
+            class="text-xs tracking-wide -top-4 font-KyivTypeSans"
+          ></p>
+
+          <div class="owl-next cursor-pointer">
+            <img src="assets/img/carousel_arrow.svg" alt="" />
           </div>
         </div>
       </section>
@@ -855,10 +1070,13 @@
               <div
                 class="py-16 flex flex-col items-center justify-center bg-gray-500 bg-opacity-5 border-white border-opacity-30 border-t border-b md:border lg:px-12"
               >
-                <img src="assets/img/eyes.svg" alt="eyes" />
+                <div
+                  class="absolute top-0 bottom-0 left-0 right-0 bg-gray-500 bg-opacity-5 blur_10"
+                ></div>
+                <img src="assets/img/eyes.svg" alt="eyes" class="z-10" />
 
                 <p
-                  class="text-base font-medium text-center text-green-50 text-opacity-70 mb-12 mt-4 font-KyivTypeSans"
+                  class="text-base font-medium text-center text-green-50 text-opacity-70 mb-12 mt-4 font-KyivTypeSans z-10"
                 >
                   Якщо ви громадська організація, якій відгукується наш
                   маніфест, ви бажаєте, аби ваш голос був почутим - долучайтеся
@@ -867,7 +1085,7 @@
                 </p>
 
                 <button
-                  class="flex items-center justify-center bg-[#66B437] shadow border rounded-full border-black border-opacity-20 w-56 h-10 text-sm font-medium tracking-wide text-white gap-4 font-unbounded hover:text-blue-700"
+                  class="flex items-center justify-center bg-[#66B437] shadow border rounded-full border-black border-opacity-20 w-56 h-10 text-sm font-medium tracking-wide text-white gap-4 font-unbounded hover:text-blue-700 z-10 hover:bg-green-700 transition-all"
                 >
                   ДОЛУЧАЙСЯ
 
@@ -883,9 +1101,9 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col_s_12 col_m_12 col_l_6 l_offset_3">
+          <div class="col_s_12 col_m_12 col_l_12">
             <div
-              class="pt-10 pb-14 flex flex-col gap-4 items-center justify-center relative"
+              class="pt-10 lg:pt-24 pb-14 lg:pb-28 flex flex-col gap-4 lg:gap-8 items-center justify-center relative"
             >
               <p
                 class="opacity-90 text-sm font-extralight text-white font-unbounded text-center"
@@ -921,11 +1139,15 @@
 
               <img src="assets/img/manifest_rotated.svg" alt="manifest" />
 
-              <img
-                src="assets/img/molod_tut.svg"
-                alt="molod_tut"
-                class="absolute bottom-0 left-0 right-0 w-full"
-              />
+              <div
+                class="absolute bottom-0 left-0 right-0 w-full overflow-hidden"
+              >
+                <img
+                  src="assets/img/molod_tut.svg"
+                  alt="molod_tut"
+                  class="max-w-full w-full xl:w-[1300px] mx-auto opacity-20 translate-y-1/2"
+                />
+              </div>
             </div>
           </div>
         </div>

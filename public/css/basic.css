@@ -27,17 +27,17 @@
   font-weight: 500;
 }
 @font-face {
-  font-family: "KyivTypeSans", sans-serif;
+  font-family: "KyivTypeSans";
   src: url("../assets/fonts/KyivTypeSans-Thin.woff2") format("woff2");
   font-weight: 100;
 }
 @font-face {
-  font-family: "KyivTypeSans", sans-serif;
+  font-family: "KyivTypeSans";
   src: url("../assets/fonts/KyivTypeSans-Regular-.woff2") format("woff2");
   font-weight: 400;
 }
 @font-face {
-  font-family: "KyivTypeSans", sans-serif;
+  font-family: "KyivTypeSans";
   src: url("../assets/fonts/KyivTypeSans-Medium2.woff2") format("woff2");
   font-weight: 500;
 }

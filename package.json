@@ -10,6 +10,7 @@
     "copy:img": "copyfiles -u 1 ./src/assets/img/**/* public",
     "copy:tailwind": "copyfiles -u 1 ./src/tailwind/tailwind.css public",
     "copy:js": "copyfiles -u 1 ./src/js/*.js public",
+    "copy:fonts": "copyfiles -u 1 ./src/assets/fonts/**.* public",
     "copy": "npm-run-all --parallel copy:*",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
     "watch:img": "onchange \"./src/assets/**/*\" -- npm run copy:img",

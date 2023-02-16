@@ -27,17 +27,17 @@
   font-weight: 500;
 }
 @font-face {
-  font-family: "KyivTypeSans", sans-serif;
+  font-family: "KyivTypeSans";
   src: url("../assets/fonts/KyivTypeSans-Thin.woff2") format("woff2");
   font-weight: 100;
 }
 @font-face {
-  font-family: "KyivTypeSans", sans-serif;
+  font-family: "KyivTypeSans";
   src: url("../assets/fonts/KyivTypeSans-Regular-.woff2") format("woff2");
   font-weight: 400;
 }
 @font-face {
-  font-family: "KyivTypeSans", sans-serif;
+  font-family: "KyivTypeSans";
   src: url("../assets/fonts/KyivTypeSans-Medium2.woff2") format("woff2");
   font-weight: 500;
 }
@@ -964,7 +964,7 @@ body.no_scroll {
 }
 
 header {
-  max-width: 956px !important;
+  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -999,4 +999,40 @@ main {
 }
 .aniamte_down {
   animation: aniamte_down 2s infinite;
+}
+
+@keyframes aniamte_opacity {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.animate_round_4 {
+  animation: aniamte_opacity 2.5s infinite;
+}
+
+.animate_round_3 {
+  animation: aniamte_opacity 2.5s 0.3s infinite;
+}
+
+.animate_round_2 {
+  animation: aniamte_opacity 2.5s 0.6s infinite;
+}
+
+.animate_round_1 {
+  animation: aniamte_opacity 2.5s 0.9s infinite;
+}
+
+.blur_10 {
+  filter: blur(10px);
+}
+
+.owl-prev.disabled, .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
 }
