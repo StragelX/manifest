@@ -31,7 +31,6 @@ body {
 }
 
 header {
-  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -41,15 +40,11 @@ main {
   min-height: auto;
 }
 
-footer {
-}
-
 .video_wrap {
   height: calc(100vh - 96px);
-  max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  background: #4C5BAF;
+  background-color: #262629;
 }
 
  .one_line {

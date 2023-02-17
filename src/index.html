@@ -19,7 +19,7 @@
   </head>
   <body>
     <header
-      class="h-12 flex items-center justify-center lg:justify-between lg:w-full"
+      class="h-12 flex items-center justify-center lg:justify-between w-full lg:max-w-[1300px] 2xl:max-w-[1800px]"
     >
       <img src="assets/img/manifest.svg" alt="маніфест молоді" />
 
@@ -31,18 +31,20 @@
     </header>
 
     <main>
-      <div class="video_wrap overflow-hidden relative rounded-sm">
-        <img
-          src="assets/img/we_are.svg"
-          class="absolute left-12 bottom-10 z-10 hidden md:block"
-          alt=""
-        />
-
-        <img
-          src="assets/img/top_flag.svg"
-          class="absolute z-20 bottom-40 left-[18.4rem] hidden md:block"
-          alt=""
-        />
+      <div
+        class="video_wrap lg:max-w-[1300px] 2xl:max-w-[1800px] overflow-hidden relative rounded-sm"
+      >
+        <div class="absolute top-0 left-0 w-full h-full">
+          <video
+            autoplay
+            muted
+            id="video"
+            controls
+            class="object-contain object-center w-full h-full"
+          >
+            <source src="assets/video/desctop_video.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
 
       <a
@@ -56,12 +58,15 @@
         />
       </a>
 
-      <section class="pt-4 lg:pt-[3.9rem] relative" id="scroll_frame">
+      <section
+        class="pt-4 lg:pt-[3.9rem] 2xl:pt-[5.9rem] relative"
+        id="scroll_frame"
+      >
         <div class="absolute top-0 z-0 w-full">
           <img
             src="assets/img/manifesting.svg"
             alt="manifesting"
-            class="max-w-[1300px] mx-auto opacity-20"
+            class="lg:max-w-[1300px] 2xl:max-w-[1800px] mx-auto opacity-20"
           />
         </div>
 
@@ -113,7 +118,7 @@
             <div class="col_s_12 col_m_7 m_offset_4 col_l_7 l_offset_4">
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-red-100 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-red-100 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <img
@@ -146,7 +151,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-red-100 font-normal text-opacity-90 font-KyivTypeSans py-4 pl-9"
+                    class="text-sm text-red-100 font-normal text-opacity-90 font-KyivTypeSans py-4 pl-9 xl:pl-[2.9rem]"
                   >
                     повага до державності, яка виявляється в розумінні єдності
                     громадян нашої країни, діях та розділеній відповідальності
@@ -159,7 +164,7 @@
 
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-red-100 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-red-100 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <img src="assets/img/box_hand.svg" class="h-[30px] w-[30px]
@@ -189,7 +194,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-red-100 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-red-100 font-normal text-opacity-90 font-KyivTypeSans py-4 pl-9 xl:pl-[2.9rem]"
                   >
                     для нас - це найвища міра відповідальності. Бути вільним -
                     це не лише про самовираз, але й про усвідомлення своїх дій
@@ -203,7 +208,7 @@
 
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-red-100 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-red-100 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <img src="assets/img/equal.svg" class="h-[30px] w-[30px]
@@ -233,7 +238,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-red-100 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-red-100 font-normal text-opacity-90 font-KyivTypeSans py-4 pl-9 xl:pl-[2.9rem]"
                   >
                     це можливість бути різними і мати при цьому рівні можливості
                     для самореалізації. Саме рівний підхід та наша
@@ -247,7 +252,7 @@
 
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-red-100 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-red-100 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <img src="assets/img/strength.svg" class="h-[30px] w-[30px]
@@ -277,7 +282,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-red-100 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-red-100 font-normal text-opacity-90 font-KyivTypeSans py-4 pl-9 xl:pl-[2.9rem]"
                   >
                     це здатність зробити гідний та справедливий внесок у
                     розвиток нашої країни. Це не про ідеї, а про дії та
@@ -323,7 +328,7 @@
             <div class="col_s_12 col_m_8 m_offset_4 col_l_8 l_offset_4">
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <img src="assets/img/hands.svg" class="h-[30px] w-[30px]
@@ -353,7 +358,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans xl:pl-[2.9rem]"
                   >
                     Це воля до свободи, участь, гарантії прав людини, це
                     можливість брати на себе відповідальність за країну через
@@ -364,7 +369,7 @@
 
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <img src="assets/img/money.svg" class="h-[30px] w-[30px]
@@ -394,7 +399,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans xl:pl-[2.9rem]"
                   >
                     підтримка підприємницького духу та тямущості молоді в
                     економічних та фінансових питаннях, умови для start-up,
@@ -407,7 +412,7 @@
 
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <img src="assets/img/beard.svg" class="h-[30px] w-[30px]
@@ -437,7 +442,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans xl:pl-[2.9rem]"
                   >
                     можливість різнобічного розвитку, який включає в себе повагу
                     до особи, її особливостей, турботу про емоційний, фізичний,
@@ -448,7 +453,7 @@
 
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <img
@@ -480,7 +485,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans xl:pl-[2.9rem]"
                   >
                     Ми маємо дбати, аби країна та наша інфраструктура була
                     доступна для всіх людей, аби кожен з наc почувався частиною
@@ -492,7 +497,7 @@
 
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-gray-200 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <img src="assets/img/cloud.svg" class="h-[30px] w-[30px]
@@ -522,7 +527,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-gray-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans xl:pl-[2.9rem]"
                   >
                     Для нас важливо, щоб відновлення включало інтереси нашої
                     природи, було ощадливим до ресурсів з повагою до природи.
@@ -580,7 +585,7 @@
             <div class="col_s_12 col_m_8 m_offset_3 col_l_7 l_offset_3">
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-purple-200 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-purple-200 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <p
@@ -607,7 +612,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-purple-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-purple-200 text-opacity-90 py-4 font-KyivTypeSans"
                   >
                     У центрі освітнього процесу - особа, яка навчається, а не
                     клас чи вчитель. Освіта має бути орієнтована на молодь,
@@ -620,7 +625,7 @@
 
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-purple-200 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-purple-200 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <p
@@ -647,7 +652,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-purple-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-purple-200 text-opacity-90 py-4 font-KyivTypeSans"
                   >
                     Ми прагнемо, щоб у суспільстві цінувалися сміливість та
                     підприємливість. Щоб стало тим, до чого прагнуть, а не чого
@@ -660,7 +665,7 @@
 
               <div class="one_line group">
                 <div
-                  class="flex items-center justify-between border-b-purple-200 border-b-[1px] border-b-solid border-opacity-40"
+                  class="flex items-center justify-between border-b-purple-200 border-b-[1px] border-b-solid border-opacity-40 group-[.active]:border-opacity-0 transition-all"
                 >
                   <div class="flex items-center gap-4 pr-4 h-16 cursor-pointer">
                     <p
@@ -687,7 +692,7 @@
                   class="group-[.active]:max-h-[160px] overflow-hidden max-h-0 transition-all"
                 >
                   <p
-                    class="text-sm text-purple-200 text-opacity-90 py-4 pl-9 font-KyivTypeSans"
+                    class="text-sm text-purple-200 text-opacity-90 py-4 font-KyivTypeSans"
                   >
                     Рішення щодо майбутнього країни не будуть ефективними, якщо
                     вони не враховуватимуть потреби молоді. Прийняття політичних
@@ -738,7 +743,7 @@
       </section>
 
       <section
-        class="border-white border-opacity-20 border-t border-b py-14 lg:py-20 flex flex-col items-center justify-center relative"
+        class="border-white border-opacity-20 border-t border-b py-14 lg:pb-20 lg:pt-[4rem] flex flex-col items-center justify-center relative"
       >
         <div
           class="absolute top-0 left-0 bottom-0 right-0 z-0 bg-gray-600 bg-opacity-5 blur_10"
@@ -750,7 +755,7 @@
         </p>
 
         <p
-          class="text-sm text-center text-gray-400 mb-14 font-normal font-KyivTypeSans z-10 lg:-mt-2"
+          class="text-sm text-center text-gray-400 mb-14 font-normal font-KyivTypeSans z-10"
         >
           розділяють наші цінності маніфесту
         </p>
@@ -767,10 +772,10 @@
       <section>
         <div class="container">
           <div class="row">
-            <div
-              class="col_s_10 s_offset_2 col_m_6 m_offset_2 col_l_10 l_offset_2"
-            >
-              <div class="flex items-center gap-4 mt-12 mb-7 lg:mt-24 lg:mb-16">
+            <div class="col_s_10 s_offset_2 col_m_6 m_offset_2 col_l_12">
+              <div
+                class="flex items-center gap-4 mt-12 mb-7 lg:mt-24 lg:mb-16 xl:pl-[29.6rem]"
+              >
                 <img
                   src="assets/img/sign.svg"
                   class="w-[30px] h-[30px]"
@@ -788,11 +793,11 @@
         </div>
       </section>
 
-      <section class="mb-24 lg:mb-32">
+      <section>
         <div class="owl-carousel">
           <div class="flex justify-end">
             <div
-              class="bg-gray-800 bg-opacity-40 rounded-sm flex items-center gap-6 pl-40 pr-6 py-4 cursor-grab mt-[230px]"
+              class="bg-gray-800 bg-opacity-40 rounded-sm flex items-center gap-6 pl-40 pr-6 py-4 cursor-grab xl:mt-[265px]"
             >
               <p class="text-base text-white text-opacity-50 font-KyivTypeSans">
                 тягни
@@ -840,7 +845,9 @@
                 </a>
               </div>
 
-              <p class="text-base text-gray-50 font-KyivTypeSans">
+              <p
+                class="text-base text-gray-50 font-KyivTypeSans max-w-[350px] 2xl:max-w-[500px]"
+              >
                 Спільнота географів України, ті в кого географія це стиль життя.
                 То поважне товариство, яке популяризує географічну освіту і
                 свідомість, формує проактивну громадську позицію з розумінням
@@ -877,7 +884,9 @@
                 </a>
               </div>
 
-              <p class="text-base text-gray-50 font-KyivTypeSans">
+              <p
+                class="text-base text-gray-50 font-KyivTypeSans max-w-[350px] 2xl:max-w-[500px]"
+              >
                 Спільнота географів України, ті в кого географія це стиль життя.
                 То поважне товариство, яке популяризує географічну освіту і
                 свідомість, формує проактивну громадську позицію з розумінням
@@ -914,7 +923,9 @@
                 </a>
               </div>
 
-              <p class="text-base text-gray-50 font-KyivTypeSans">
+              <p
+                class="text-base text-gray-50 font-KyivTypeSans max-w-[350px] 2xl:max-w-[500px]"
+              >
                 Спільнота географів України, ті в кого географія це стиль життя.
                 То поважне товариство, яке популяризує географічну освіту і
                 свідомість, формує проактивну громадську позицію з розумінням
@@ -951,7 +962,9 @@
                 </a>
               </div>
 
-              <p class="text-base text-gray-50 font-KyivTypeSans">
+              <p
+                class="text-base text-gray-50 font-KyivTypeSans max-w-[350px] 2xl:max-w-[500px]"
+              >
                 Спільнота географів України, ті в кого географія це стиль життя.
                 То поважне товариство, яке популяризує географічну освіту і
                 свідомість, формує проактивну громадську позицію з розумінням
@@ -988,7 +1001,9 @@
                 </a>
               </div>
 
-              <p class="text-base text-gray-50 font-KyivTypeSans">
+              <p
+                class="text-base text-gray-50 font-KyivTypeSans max-w-[350px] 2xl:max-w-[500px]"
+              >
                 Спільнота географів України, ті в кого географія це стиль життя.
                 То поважне товариство, яке популяризує географічну освіту і
                 свідомість, формує проактивну громадську позицію з розумінням
@@ -1025,7 +1040,9 @@
                 </a>
               </div>
 
-              <p class="text-base text-gray-50 font-KyivTypeSans">
+              <p
+                class="text-base text-gray-50 font-KyivTypeSans max-w-[350px] 2xl:max-w-[500px]"
+              >
                 Спільнота географів України, ті в кого географія це стиль життя.
                 То поважне товариство, яке популяризує географічну освіту і
                 свідомість, формує проактивну громадську позицію з розумінням
@@ -1040,25 +1057,33 @@
             </div>
           </div>
         </div>
+      </section>
 
-        <div
-          class="owl-nav flex items-baseline gap-5 mt-12 text-white w-full justify-center"
-        >
-          <div class="owl-prev cursor-pointer disabled">
-            <img
-              src="assets/img/carousel_arrow.svg"
-              alt=""
-              class="rotate-180"
-            />
-          </div>
+      <section class="mb-24 lg:mb-32">
+        <div class="container">
+          <div class="row">
+            <div class="col_12">
+              <div
+                class="owl-nav flex items-baseline gap-5 text-white w-full xl:pl-[17.7rem] 2xl:pl-[17.3rem]"
+              >
+                <div class="owl-prev cursor-pointer disabled">
+                  <img
+                    src="assets/img/carousel_arrow.svg"
+                    alt=""
+                    class="rotate-180"
+                  />
+                </div>
 
-          <p
-            id="info"
-            class="text-xs tracking-wide -top-4 font-KyivTypeSans"
-          ></p>
+                <p
+                  id="info"
+                  class="text-xs tracking-wide -top-4 font-KyivTypeSans"
+                ></p>
 
-          <div class="owl-next cursor-pointer">
-            <img src="assets/img/carousel_arrow.svg" alt="" />
+                <div class="owl-next cursor-pointer">
+                  <img src="assets/img/carousel_arrow.svg" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1098,7 +1123,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="relative">
       <div class="container">
         <div class="row">
           <div class="col_s_12 col_m_12 col_l_12">
@@ -1133,24 +1158,24 @@
 
               <a
                 href="mailto:manifestmolodi.info@gmail.com"
-                class="mt-7 mb-1 text-sm underline text-gray-200 text-opacity-70 hover:no-underline font-kharkiv"
+                class="mt-7 mb-1 text-sm underline text-gray-200 text-opacity-70 hover:no-underline hover:text-blue-300 transition-all font-kharkiv"
                 >manifestmolodi.info@gmail.com</a
               >
 
               <img src="assets/img/manifest_rotated.svg" alt="manifest" />
-
-              <div
-                class="absolute bottom-0 left-0 right-0 w-full overflow-hidden"
-              >
-                <img
-                  src="assets/img/molod_tut.svg"
-                  alt="molod_tut"
-                  class="max-w-full w-full xl:w-[1300px] mx-auto opacity-20 translate-y-1/2"
-                />
-              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div
+        class="absolute bottom-0 left-0 right-0 w-full overflow-hidden pointer-events-none"
+      >
+        <img
+          src="assets/img/molod_tut.svg"
+          alt="molod_tut"
+          class="w-full mx-auto opacity-20 translate-y-1/2"
+        />
       </div>
     </footer>
   </body>

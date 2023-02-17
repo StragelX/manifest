@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  document.getElementById("video").addEventListener("ended", myHandler, false);
+
+  function myHandler() {
+    const element = document.getElementById("scroll_frame").scrollIntoView();
+  }
+
   $(".one_line").click(function () {
     $(".one_line").not(this).removeClass("active");
 
