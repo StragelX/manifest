@@ -16,8 +16,6 @@ $(document).ready(function () {
   var owl = $(".owl-carousel");
 
   owl.owlCarousel({
-    nav: true,
-
     responsive: {
       0: {
         items: 1,
@@ -29,7 +27,7 @@ $(document).ready(function () {
         startPosition: 1,
       },
       1025: {
-        items: 1.4,
+        items: 1.7,
         center: true,
         margin: 50,
         startPosition: 1,
@@ -98,5 +96,9 @@ $(document).ready(function () {
         $(".counter").html(i);
         break;
     }
+  });
+
+  AOS.init({
+    once: true,
   });
 });
