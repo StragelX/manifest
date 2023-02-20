@@ -1,8 +1,4 @@
 $(document).ready(function () {
-  document
-    .getElementById("video")
-    .addEventListener("ended", scrollAfterVideo, false);
-
   function scrollAfterVideo() {
     document.getElementById("scroll_frame").scrollIntoView();
   }
@@ -101,4 +97,14 @@ $(document).ready(function () {
   AOS.init({
     once: true,
   });
+
+  if (window.innerWidth < 767) {
+    $("#video_desctop").remove();
+    document.getElementById("video_mobile");
+    // .addEventListener("ended", scrollAfterVideo, false);
+  } else {
+    $("#video_mobile").remove();
+    document.getElementById("video_desctop");
+    // .addEventListener("ended", scrollAfterVideo, false);
+  }
 });
