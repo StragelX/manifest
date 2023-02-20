@@ -1,7 +1,9 @@
 $(document).ready(function () {
-  document.getElementById("video").addEventListener("ended", myHandler, false);
+  document
+    .getElementById("video")
+    .addEventListener("ended", scrollAfterVideo, false);
 
-  function myHandler() {
+  function scrollAfterVideo() {
     const element = document.getElementById("scroll_frame").scrollIntoView();
   }
 
@@ -14,16 +16,33 @@ $(document).ready(function () {
   var owl = $(".owl-carousel");
 
   owl.owlCarousel({
-    items: 1.4,
-    margin: 50,
     nav: true,
-    startPosition: 1,
-    center: true,
+
+    responsive: {
+      0: {
+        items: 1,
+      },
+      769: {
+        items: 1.2,
+        center: false,
+        margin: 50,
+        startPosition: 1,
+      },
+      1025: {
+        items: 1.4,
+        center: true,
+        margin: 50,
+      },
+    },
 
     onInitialized: function (e) {
       $("#info").text(e.item.index + "/" + (e.item.count - 1));
     },
   });
+
+  if (window.innerWidth < 1025) {
+    owl.trigger("remove.owl.carousel", [0]).trigger("refresh.owl.carousel");
+  }
 
   owl.on("changed.owl.carousel", function (e) {
     $("#info").text(e.item.index + "/" + (e.item.count - 1));
