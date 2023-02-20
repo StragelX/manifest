@@ -4,7 +4,7 @@ $(document).ready(function () {
     .addEventListener("ended", scrollAfterVideo, false);
 
   function scrollAfterVideo() {
-    const element = document.getElementById("scroll_frame").scrollIntoView();
+    document.getElementById("scroll_frame").scrollIntoView();
   }
 
   $(".one_line").click(function () {
