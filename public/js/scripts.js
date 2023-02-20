@@ -32,11 +32,12 @@ $(document).ready(function () {
         items: 1.4,
         center: true,
         margin: 50,
+        startPosition: 1,
       },
     },
 
     onInitialized: function (e) {
-      $("#info").text(e.item.index + "/" + (e.item.count - 1));
+      $(".nav_info").text(e.item.index + "/" + (e.item.count - 1));
     },
   });
 
@@ -45,7 +46,7 @@ $(document).ready(function () {
   }
 
   owl.on("changed.owl.carousel", function (e) {
-    $("#info").text(e.item.index + "/" + (e.item.count - 1));
+    $(".nav_info").text(e.item.index + "/" + (e.item.count - 1));
 
     if (e.item.index === 1) {
       $(".owl-prev").addClass("disabled");
@@ -66,5 +67,36 @@ $(document).ready(function () {
 
   $(".owl-next").click(function () {
     owl.trigger("next.owl.carousel");
+  });
+
+  let counter = "0001";
+
+  $(".counter").html(counter);
+
+  $(".increment_counter").click(function () {
+    let i = parseInt($(".counter").html());
+    i++;
+
+    switch (true) {
+      case i < 10:
+        $(".counter").html("000" + i);
+        break;
+
+      case i < 100 && i > 9:
+        $(".counter").html("00" + i);
+        break;
+
+      case i > 99 && i < 1000:
+        $(".counter").html("0" + i);
+        break;
+
+      case i > 1000:
+        $(".counter").html(i);
+        break;
+
+      default:
+        $(".counter").html(i);
+        break;
+    }
   });
 });
