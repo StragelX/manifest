@@ -5,7 +5,12 @@ $(document).ready(function () {
 
   function scrollAfterVideo() {
     document.getElementById("scroll_frame").scrollIntoView();
+    $("body").removeClass("no_scroll");
   }
+
+  $(".mobile_video").bind("ended", function () {
+    scrollAfterVideo();
+  });
 
   $(".one_line").click(function () {
     $(".one_line").not(this).removeClass("active");
@@ -24,35 +29,36 @@ $(document).ready(function () {
         items: 1.2,
         center: false,
         margin: 50,
-        startPosition: 1,
       },
       1025: {
         items: 1.7,
         center: true,
         margin: 50,
-        startPosition: 1,
       },
     },
 
     onInitialized: function (e) {
-      $(".nav_info").text(e.item.index + "/" + (e.item.count - 1));
+      $(".nav_info").text(e.item.index + 1 + "/" + e.item.count);
     },
   });
 
-  if (window.innerWidth < 1025) {
-    owl.trigger("remove.owl.carousel", [0]).trigger("refresh.owl.carousel");
-  }
+  $(".owl_pull").click(function () {
+    owl.trigger("next.owl.carousel", [300]);
+    $(".owl_pull").hide();
+  });
 
   owl.on("changed.owl.carousel", function (e) {
-    $(".nav_info").text(e.item.index + "/" + (e.item.count - 1));
+    $(".nav_info").text(e.item.index + 1 + "/" + e.item.count);
 
-    if (e.item.index === 1) {
+    if (e.item.index === 0) {
       $(".owl-prev").addClass("disabled");
+      $(".owl_pull").show(300);
     } else {
       $(".owl-prev").removeClass("disabled");
+      $(".owl_pull").hide();
     }
 
-    if (e.item.index === e.item.count - 1) {
+    if (e.item.index === e.item.count) {
       $(".owl-next").addClass("disabled");
     } else {
       $(".owl-next").removeClass("disabled");
@@ -101,4 +107,15 @@ $(document).ready(function () {
   AOS.init({
     once: true,
   });
+
+  $(".start_video").click(function () {
+    $("#video").get(0).play();
+    $(this).hide();
+  });
+
+  if (window.innerWidth < 767) {
+    $(".desctop_video").remove();
+  } else {
+    $(".mobile_video").remove();
+  }
 });
