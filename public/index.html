@@ -43,23 +43,23 @@
         <div class="absolute top-0 left-0 w-full h-full">
           <video
             autoplay
-            id="video_desctop"
+            id="video"
             controls
             playsinline
-            class="object-contain object-center w-full h-full hidden md:block video"
+            muted
+            class="object-contain object-center w-full h-full"
           >
-            <source src="assets/video/desctop_video.mp4" type="video/mp4" />
+            <source
+              src="assets/video/desctop_video.mp4"
+              type="video/mp4"
+              media="all and (min-width: 767px)"
+            />
+            <source
+              src="assets/video/mobile_video.mp4"
+              type="video/mp4"
+              media="all and (max-width: 766px)"
+            />
           </video>
-
-          <!-- <video
-            autoplay
-            id="video_mobile"
-            controls
-            playsinline
-            class="object-contain object-center w-full h-full md:hidden video"
-          >
-            <source src="assets/video/mobile_video.mp4" type="video/mp4" />
-          </video> -->
         </div>
       </div>
 
